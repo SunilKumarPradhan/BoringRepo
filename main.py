@@ -45,8 +45,8 @@ async def send_message(message: str):
     session = create_datastax_connection()
 
     # Set up AI model and service context
-    GRADIENT_ACCESS_TOKEN = "wvdlvkI7UFke9VUk1DQ1nVyxwSjKc2IX"
-    GRADIENT_WORKSPACE_ID = "d7f5c932-179e-4944-b4f8-d745c350df4e_workspace"
+    GRADIENT_ACCESS_TOKEN = "GRADIENT_ACCESS_TOKEN"
+    GRADIENT_WORKSPACE_ID = "GRADIENT_WORKSPACE_ID"
 
     llm = GradientBaseModelLLM(base_model_slug="llama2-7b-chat", max_tokens=400)
 
